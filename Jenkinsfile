@@ -9,7 +9,7 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image "gradle:3.5-jdk8-alpine"
+          image "localhost:31095/gradle:3.5-jdk8-alpine"
         }
       }
       steps {
