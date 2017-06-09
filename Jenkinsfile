@@ -11,11 +11,10 @@ pipeline {
         docker {
           image "gradle:3.5-jdk8-alpine"
         }
-        steps {
-          sh 'gradle build'
-        }
       }
-    
+      steps {
+        sh 'gradle build'
+      }
     }
   }
 }
